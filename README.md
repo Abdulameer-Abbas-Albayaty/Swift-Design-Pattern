@@ -1,7 +1,6 @@
 # Swift-Design-Pattern
 
 MVC Login Example in Swift 4.0, 
-First we build our View :
 ```swift
 protocol LoginView {
     func onLoginSuccess()
@@ -9,7 +8,6 @@ protocol LoginView {
 }
 ```
 
-Then we should build the model :
 ```swift
 class LoginModel {
     private var view:LoginView? = nil
@@ -28,7 +26,7 @@ class LoginModel {
 
 }
 ```
-finally we build the Controller :
+
 ```swift
 class LoginController {
     private var view:LoginView? = nil
@@ -45,8 +43,6 @@ class LoginController {
     
 }
 ```
-
-Now let take a test :
 
 ```swift 
 class Test:LoginView {
